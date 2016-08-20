@@ -1,5 +1,7 @@
 'use strict';
 
+module.exports = HeaderParser;
+
 function HeaderParser () {
     var forwardedKey = "x-forwarded-for";
     var userAgentKey = "user-agent";
@@ -28,5 +30,3 @@ function HeaderParser () {
         return software;
 	}
 }
-
-module.exports = HeaderParser;
